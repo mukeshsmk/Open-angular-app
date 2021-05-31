@@ -1,0 +1,87 @@
+<div class="Home-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="home-section">
+                    <h3 class="title">We make it Super Simple</h3>
+                    <img src="assets/images/home-img.png">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="calculator-section mt-5">
+                    <div class="calculator">
+                        <div class="calculator-title">
+                            <h6>Eligibility calculator</h6>
+                        </div>
+                        <div class="calculator-form">
+                            <div class="form-group">
+                                <label for="examplemonthlyIncomeInputEmail1">Monthly Income</label>
+                                <h4><span>&#8377;</span> {{monthlyIncome}}</h4>
+                                <input type="range" min="100000" max="300000" [(ngModel)]="monthlyIncome" id="higher"
+                                    class="slider" style="width: 100%;">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <span style="font-size: 12px;color: #a9b1b9;"> <span>&#8377;</span>
+                                            {{minMonthlyIncome}}</span>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <span style="float: right;font-size: 12px;color: #a9b1b9;   ">
+                                            <span>&#8377;</span>{{maxMonthlyIncome}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="monthlyExpense">Monthly Expense</label>
+                                <h4><span>&#8377;</span> {{monthlyExpense}}</h4>
+                                <input type="range" min="0" max="100000" [(ngModel)]="monthlyExpense" id="higher"
+                                    class="slider" style="width: 100%;">
+                            </div>
+                            <div class="form-group">
+                                <label for="emi">Repayment Tenure</label><br>
+                                <select class="select">
+                                    <option value="value1">3 Months</option>
+                                    <option value="value1">6 Months</option>
+                                    <option value="value2">9 Months</option>
+                                    <option value="value3">12 Months</option>
+                                </select>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-10 p-3">Do you have any existing loan?</label>
+                                <div class="col-sm-2 pt-3">
+                                    <input type="checkbox" class="toggle" checked>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="emi">EMI of existing loan (optional)</label><br>
+                                <input class="input-text" type="number" Placeholder="&#8377;15000">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="getMoney-card">
+                        <div class="calculator-form">
+                            <div class="form-group">
+                                <label for="examplemonthlyIncomeInputEmail1">Load Amount</label>
+                                <h5><span>&#8377;</span> {{loanAmount}}</h5>
+                            </div>
+                            <div class="form-group">
+                                <label for="examplemonthlyIncomeInputEmail1">Your EMI will be</label>
+                                <h5><span>&#8377;</span> {{emiAmount}}</h5>
+                            </div>
+                            <button class="money-button">
+                                Get Money
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <img class="dot1" src="assets/images/accounting_dots.svg">
+            </div>
+            <div class="col-sm-6">
+                <img class="dot2" src="assets/images/accounting_dots.svg">
+            </div>
+        </div>
+    </div>
+</div>

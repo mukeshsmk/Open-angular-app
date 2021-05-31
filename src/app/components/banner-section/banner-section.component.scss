@@ -1,0 +1,225 @@
+/* Home Section Css  */
+.Home-banner {
+    background: #fcfcff;
+    height: 88vh;
+}
+.Home-banner:after {
+    content: "";
+    background: url("../../../assets/images/home-bg-1.png") no-repeat center center/cover;
+    position: absolute;
+    top: -169px;
+    right: 0;
+    width: 60%;
+    height: 100%;
+}
+.Home-banner:before {
+    content: "";
+    background: url("../../../assets/images/home-bg-2.png") no-repeat center center/cover;
+    position: absolute;
+    left: -15vh;
+    top: 15vh;
+    width: 60vh;
+    height: 60vh;
+}
+.home-section {
+    margin: 10vh 0;
+}
+.home-section img {
+    width: 75%;
+    position: relative;
+}
+.title {
+    margin-left: 6vh;
+    width: 45%;
+    margin-bottom: 10vh;
+}
+.title:after {
+    display: inline-block;
+    content: "";
+    border-bottom: 0.3rem solid #000000;
+    border-radius: 13px;
+    width: 9rem;
+    position: relative;
+    right: 12vh;
+    top: 3vh;
+}
+
+//Calculator box
+.calculator {
+    background: #fff;
+    z-index: 1;
+    position: relative;
+    width: 60%;
+    float: left;
+    box-shadow: 0px 0px 30px #2321321f;
+    border-radius: 12px;
+}
+.calculator-title {
+    background: #fafbfd;
+    color: #696363;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 12px;
+}
+.calculator-form {
+    padding: 0px 25px 25px;
+}
+.calculator-form label {
+    font-size: 14px;
+    padding: 10px 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+input[type="range"] {
+    width: 400px;
+    -webkit-appearance: none;
+    background-color: #b9b9b95c;
+    height: 10px;
+    border-radius: 50px;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 10px;
+    -webkit-appearance: none;
+    color: #6f188c;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    width: 15px;
+    -webkit-appearance: none;
+    height: 14px;
+    border-radius: 50px;
+    cursor: pointer;
+    background: #6f188c;
+    box-shadow: -200px 0 0 195px #6f188c;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    margin-top: -2px;
+}
+
+/** FF*/
+input[type="range"]::-moz-range-progress {
+    background-color: #6f188c;
+}
+
+input[type="range"]::-moz-range-track {
+    background-color: #b9b9b95c;
+}
+
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+    background-color: #6f188c;
+}
+
+input[type="range"]::-ms-fill-upper {
+    background-color: #6f188c;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+}
+input[type="checkbox"]:focus {
+    outline: 0;
+}
+
+select {
+    all: unset;
+    border-bottom: 1px solid #adb5bd;
+    width: 100%;
+    background: url("https://www.charbase.com/images/glyph/9662") no-repeat right;
+    background-size: 16px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.input-text {
+    border: none;
+    border-bottom: 1px solid #41464b;
+    width: 95%;
+    font-weight: 500;
+    outline: none;
+}
+
+.toggle {
+    height: 12px;
+    width: 25px;
+    border-radius: 16px;
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    border: 2px solid #dee2e6;
+    background: #dee2e6;
+    transition: all 0.2s ease;
+}
+.toggle:after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -7px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 1px 2px rgba(44, 44, 44, 0.2);
+    transition: all 0.2s cubic-bezier(0.5, 0.1, 0.75, 1.35);
+}
+.toggle:checked {
+    border-color: #654fec;
+    border: 2px solid #663399;
+    background: #663399;
+}
+.toggle:checked:after {
+    transform: translatex(20px);
+}
+.getMoney-card {
+    background: transparent linear-gradient(90deg, #9f62c9 0%, #663399 100%) 0% 0% no-repeat padding-box;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    width: 35%;
+    margin: 11% 10px;
+    padding: 10% 0;
+    float: left;
+    box-shadow: 0px 0px 30px #2321321f;
+    /* height: 50vh; */
+    color: #fff;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.money-button {
+    padding: 6px 28px;
+    border: none;
+    color: #663399;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+.money-button:hover {
+    background: #663399;
+    color: #fff;
+    /*  border: 2px solid #663399; */
+}
+.getMoney-card label {
+    font-size: 12px;
+    color: #ffffffba;
+}
+
+.dot1 {
+    position: relative;
+    top: -107px;
+    left: 35%;
+    z-index: 0;
+    width: 60%;
+}
+.dot2 {
+    position: relative;
+    top: -50px;
+    left: 35%;
+    z-index: 0;
+    width: 60%;
+}
