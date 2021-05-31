@@ -7,7 +7,7 @@
 **1. Clone this repo by running the following command :-**
 
 ```bash
- git clone https://github.com/mukeshYaali45/Open-angular-app.git
+ git clone https://github.com/mukeshsmk/Open-angular-app.git
  cd Open-angular-app
 ```
 
